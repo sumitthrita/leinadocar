@@ -1,0 +1,4 @@
+export const ADD_TO_CARD = "ADD_TO_CARD";
+export const SET_SELECTED_VEHICLE = "SET_SELECTED_VEHICLE"
+export const SET_ADDRESS = "SET_ADDRESS"
+export const SET_PHONE = "SET_PHONE"
