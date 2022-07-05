@@ -24,7 +24,7 @@ box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.
     padding: 0;
     background-color: #ECE4E3;
     height: 96px;
-    padding: 0 50px 20px;
+    padding: 0 90px 20px;
     align-items: flex-end;
 }
 
@@ -159,7 +159,7 @@ box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.
 }
 
 .checkout_main {
-    padding: 40px 50px;
+    padding: 40px 90px;
     display: flex;
     justify-content: space-between;
 }
@@ -409,13 +409,17 @@ button.btn-default {
 }
 
 .services_container {
-    padding: 30px 50px;
+    padding: 0 90px 30px 90px;
 }
 
 .services_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 96px;
+    background-color: #ECE4E3;
+    z-index: 99;
 }
 
 .servicesHeader_services {
@@ -440,6 +444,7 @@ button.btn-default {
     line-height: 14px;
     color: #000;
     margin-bottom: 12px;
+    cursor: pointer;
 }
 
 .servicesHeaderServices_each.selected {
@@ -476,6 +481,22 @@ button.btn-default {
 
 .eachServiceCard.moreWidth {
     width: 90%;
+}
+
+.eachServiceCard.moreWidth .eSCTop__right {
+    width: calc(50% - 96px);
+}
+
+.eachServiceCard.moreWidth .eSCTop__left img {
+    width: 100%;
+}
+
+.eachServiceCard.moreWidth .serviceAdded_text {
+    width: calc(50% - 96px);
+}
+
+.eachServiceCard.moreWidth .doc_button.add_to_cart {
+    width: calc(50% - 96px);
 }
 
 .eSC_top {
@@ -548,7 +569,7 @@ button.btn-default {
 }
 
 .eSCTop__left img {
-    width: 100%;
+    width: 240px;
     height: 220px;
 }
 

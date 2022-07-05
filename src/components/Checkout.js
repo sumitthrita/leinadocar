@@ -47,9 +47,9 @@ const Checkout = props => {
                     </div>
                     <div className="sB__each-bar">
                         <div className="sB__bar"></div>
-                        <div className={`sB_circle ${services[0]?.serviceName !== "" ? "complete" : ""}`}>
-                            <div className={`sB_innerCircle ${services[0]?.serviceName !== "" ? "complete" : ""}`} >
-                                {selectedVehicle !== "" && 
+                        <div className={`sB_circle ${services?.length > 0 ? "complete" : ""}`}>
+                            <div className={`sB_innerCircle ${services?.length > 0 ? "complete" : ""}`} >
+                                {services?.length > 0  && 
                                     <FontAwesomeIcon icon={faCheck} />
                                 }
                             </div>

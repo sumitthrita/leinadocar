@@ -4,6 +4,8 @@ import Button from './Button';
 import React, { memo, useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { setAddress } from '../Redux/action';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const CheckoutLoacation = props => {
@@ -34,8 +36,12 @@ const CheckoutLoacation = props => {
     },[])
 
     const handleSave = useCallback((e) => {
-        setCanEdit(false)
-        dispatch(setAddress(localAddress))
+        if(localAddress !== ""){
+            setCanEdit(false)
+            dispatch(setAddress(localAddress))
+        } else {
+            toast.error("Please enter address.")
+        }
     },[localAddress])
 
     return (
@@ -55,6 +61,17 @@ const CheckoutLoacation = props => {
                 </div>
             </div>
             {canEdit && <Button className="address" label="Save Address" handleMe={handleSave} />}
+            <ToastContainer
+                position="bottom-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnVisibilityChange
+                draggable
+                pauseOnHover
+            />
         </div>
     )
 }
