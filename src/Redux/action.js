@@ -1,8 +1,10 @@
+import { DentingAndPainting, PeriodicServices } from "../components/ServicesData";
 import {
     ADD_TO_CARD,
     SET_SELECTED_VEHICLE,
     SET_ADDRESS,
-    SET_PHONE
+    SET_PHONE,
+    SET_SERVICES_TO_SELECT
     } from "./actionTypes";
 
 export const addToCard = (data) => {
@@ -37,6 +39,26 @@ export const setPhone = phone => {
         dispatch({
             type : SET_PHONE, 
             payload : phone
+        })
+    }
+}
+
+export const setServicesToSelect = serviceType => {
+    let services = []
+    switch (serviceType) {
+        case "Periodic Services":
+            services = PeriodicServices
+            break;
+        case "Denting & Paiting":
+            services = DentingAndPainting
+            break;
+        default:
+            break;
+    }
+    return dispatch => {
+        dispatch({
+            type : SET_SERVICES_TO_SELECT, 
+            payload: services
         })
     }
 }

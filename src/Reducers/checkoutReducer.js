@@ -2,7 +2,8 @@ import {
     ADD_TO_CARD,
     SET_SELECTED_VEHICLE,
     SET_ADDRESS,
-    SET_PHONE
+    SET_PHONE,
+    SET_SERVICES_TO_SELECT
     } from "../Redux/actionTypes";
   
     //status => "closed" means not focused, "open" means doc is ready to edit and fill, "done" means added to rx or review panel
@@ -13,7 +14,8 @@ import {
         },
         _services : JSON.stringify([]),
         _address : "",
-        _contactNumber : ""
+        _contactNumber : "",
+        _servicesToSelect : []
     };
   
     
@@ -43,6 +45,12 @@ import {
             return {
                 ...state,
                 _phone : action.payload
+            }
+            break;
+        case SET_SERVICES_TO_SELECT:
+            return {
+                ...state,
+                _servicesToSelect : action.payload
             }
             break;
         default:

@@ -420,18 +420,20 @@ button.btn-default {
     top: 96px;
     background-color: #ECE4E3;
     z-index: 99;
+    padding-bottom: 24px;
 }
 
 .servicesHeader_services {
     display: flex;
-    overflow: auto;
+    overflow-x: auto;
     white-space: nowrap;
     margin: 0 12px;
+    -webkit-overflow-scrolling: touch;
 }
 
-.servicesHeader_icon {
-    margin-bottom: 12px;
-}
+.servicesHeader_services::-webkit-scrollbar {
+    display: none;
+ }
 
 .servicesHeaderServices_each {
     margin-left: 12px;
@@ -443,7 +445,7 @@ button.btn-default {
     font-size: 14px;
     line-height: 14px;
     color: #000;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     cursor: pointer;
 }
 
@@ -545,6 +547,7 @@ button.btn-default {
     font-size: 14px;
     line-height: 14px;
     color: #000;
+    width: calc(100% - 28px);
 }
 
 .eSC_bottom {
@@ -618,7 +621,7 @@ button.btn-default {
     width: 16%;
     margin-left: 36px;
     position: fixed;
-    right: 50px;
+    right: 90px;
     opacity: 1;
 }
 

@@ -1,6 +1,8 @@
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { memo, useRef, useState } from 'react'
+import React, { memo, useEffect, useRef, useState } from 'react'
+import { useDispatch } from 'react-redux';
+import { setServicesToSelect } from '../Redux/action';
 
 const ServicesHeader = props => {
 
@@ -8,12 +10,22 @@ const ServicesHeader = props => {
     const [selectedService, setSelectedService] = useState("Periodic Services")
     const previousRef = useRef()
 
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(setServicesToSelect(selectedService))
+    },[selectedService])
+
     const handleSlide = type => {
         if(type === "left"){
             previousRef.current.scrollTo({ left: previousRef.current.scrollLeft - 200, behavior: 'smooth' });
         } else if (type === "right"){
             previousRef.current.scrollTo({ left: previousRef.current.scrollLeft + 200, behavior: 'smooth' });
         }
+    }
+
+    const handleServiceType = type => {
+        setSelectedService(type)
     }
     
     return (
@@ -24,7 +36,7 @@ const ServicesHeader = props => {
             <div ref={previousRef} className='servicesHeader_services'>
                 {services.map((service, index) => {
                     return(
-                        <div key={index} className={'servicesHeaderServices_each' + (selectedService === service ? " selected" : "")}>{service}</div>
+                        <div key={index} className={'servicesHeaderServices_each' + (selectedService === service ? " selected" : "")} onClick={() => handleServiceType(service)} >{service}</div>
                     )
                 })}
             </div>
