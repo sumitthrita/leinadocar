@@ -15,7 +15,7 @@ return (
     <Navbar.Toggle aria-controls="responsive-navbar-nav" id="navbar-toggler-icon"/>
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto"  >
-        <NavLink to="/" id="element" exact activeClassName="navbar__link--active"   >Home</NavLink>
+        <NavLink to="/leinadocar" id="element" exact activeClassName="navbar__link--active"   >Home</NavLink>
         <NavLink to="/services" id="element" exact activeClassName="navbar__link--active"  >Services</NavLink>
         <NavLink to="/aboutUs" id="element" exact activeClassName="navbar__link--active"  >About Us</NavLink>
         <NavLink to="/contact" id="element" activeClassName="navbar__link--active">Contact</NavLink>

@@ -23,8 +23,8 @@ box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.
 .headnav.navbar {
     padding: 0;
     background-color: #ECE4E3;
-    height: 96px;
-    padding: 0 90px 20px;
+    height: 100px;
+    padding: 0 90px 32px;
     align-items: flex-end;
 }
 
@@ -34,11 +34,13 @@ box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.
  
 .headnav .navbar-brand img {
     height: 29px;
+    margin-top: 4px;
 }
 
 #responsive-navbar-nav {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .headnav .navbar-brand div {
@@ -88,6 +90,11 @@ box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+
 }
 
 .cO__sB-each {
@@ -159,7 +166,7 @@ box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.
 }
 
 .checkout_main {
-    padding: 40px 90px;
+    padding-top: 68px;
     display: flex;
     justify-content: space-between;
 }
@@ -408,16 +415,12 @@ button.btn-default {
     color: #000;
 }
 
-.services_container {
-    padding: 0 90px 30px 90px;
-}
-
 .services_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    top: 96px;
+    top: 100px;
     background-color: #ECE4E3;
     z-index: 99;
     padding-bottom: 24px;
@@ -456,6 +459,10 @@ button.btn-default {
 
 .serviceType_container {
     margin-top: 24px;
+}
+
+.serviceType_container:nth-child(1) {
+    margin-top: 0;
 }
 
 .sT_title {
@@ -617,7 +624,6 @@ button.btn-default {
 }
 
 .selectedServicesCart_container.moreWidth {
-    margin-top: 24px;
     width: 16%;
     margin-left: 36px;
     position: fixed;
@@ -665,4 +671,125 @@ button.btn-default {
 
 .selectedServicesCart_container.moreWidth a{
     width: 90px;
+}
+
+.selectedService_card_right {
+    cursor: pointer;
+}
+
+.changeIcon {
+    cursor: pointer;
+}
+
+.eSCart_header svg {
+    cursor: pointer;
+}
+
+.leinaDocar_main {
+    padding: 0 90px 30px;
+}
+
+.homepageSectionOne {
+    display: flex;
+}
+
+.carAndModal {
+    width: 500px;
+    background: #F7F2FF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 40px 50px;
+}
+
+.carAndModal_title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.carAndModal_title svg {
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.carAndModal_search {
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.carAndModal_search input {
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+}
+
+.carAndModal_search input:focus {
+    border: 1px solid #8979E5;
+    outline: none;
+    box-shadow: none;
+}
+
+.carAndModal_items {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 256px;
+    overflow-y: scroll;
+}
+
+.carAndModal_eachItems {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.carAndModal_eachItems_img {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.carAndModal_eachItems_img img {
+    width: 80px;
+    max-height: 80px;
+    cursor: pointer;
+}
+
+.carAndModal_eachItems_img.page_modal img:hover {
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.carAndModal_eachItems_img.page_modal img {
+    width: 80%;
+    -webkit-transition: width 0.2s, transform 0.7s ease 0.3s;
+    transition: width 0.2s, transform 0.7s ease 0.3s;
+} 
+
+.carAndModal_eachItems_img.page_engineType img {
+    width: 60px;
+    max-height: 60px;
+}
+
+.carAndModal_eachItems_title {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.carAndModal_noitem {
+    margin-top: 12px;
+    color: red;
+}
+
+.carAndModal_noitem span {
+    color: #000;
+    font-weight: 500;
 }

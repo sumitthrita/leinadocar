@@ -1,15 +1,12 @@
-import React from "react"
-// import Booking from "./booking/Booking"
-// import Steps from "./service steps/Steps"
-// import Service from "./special services/Service"
-// import Footer from "./footer/Footer"
+import React, { memo } from "react"
+import HomepageSectionOne from "./HomepageSectionOne";
 
 const HomePage = props => {
   return (
-    <div className="main">
-      Homepage
+    <div className="homepage">
+      <HomepageSectionOne />
     </div>
   )
 }
 
-export default HomePage;
+export default memo(HomePage);

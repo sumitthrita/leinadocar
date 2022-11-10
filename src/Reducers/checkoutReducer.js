@@ -9,8 +9,9 @@ import {
     //status => "closed" means not focused, "open" means doc is ready to edit and fill, "done" means added to rx or review panel
     const initial_state = {
         _selectedVehicle: {
-            name: "Tata Nexon",
-            type: "Petrol"
+            company: "",
+            modal : "",
+            engineType: ""
         },
         _services : JSON.stringify([]),
         _address : "",
