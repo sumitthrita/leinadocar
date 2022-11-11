@@ -1,5 +1,6 @@
 import React, { memo, useState } from "react"
 import HomepageEasyBook from "./HomepageEasyBook";
+import carImage from '../Images/homecar.png'
 
 const HomePageSectionOne = props => {
 
@@ -7,7 +8,9 @@ const HomePageSectionOne = props => {
   return (
     <div className="homepageSectionOne">
         <HomepageEasyBook />
-        right section
+        <div className="homepageSectionRight">
+          <img src={carImage} alt="carImage" />
+        </div>
     </div>
   )
 }

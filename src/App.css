@@ -3,7 +3,7 @@
   }
 
 body {
-    background-color: #ECE4E3;
+    /* background-color: #ECE4E3; */
 }
 
 input, textarea {
@@ -698,23 +698,24 @@ button.btn-default {
 }
 
 .leinaDocar_main {
-    padding: 0 90px 30px;
-}
-
-.homepage {
-    margin-top: 12px;
+    padding: 0 0px 30px;
 }
 
 .homepageSectionOne {
+    padding: 24px 0 60px 140px;
     display: flex;
+    height: 502px;
+    background-color: #ECE4E3;
+    justify-content: space-between;
 }
 
 .easy_book_home {
     width: 360px;
+    height: 398px;
     background: #F7F2FF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
-    padding: 36px 36px;
+    padding: 56px 36px 36px 36px;
 }
 
 .easy_book_title {
@@ -733,14 +734,18 @@ button.btn-default {
 }
 
 .carAndModal_phone {
-    margin-top: 24px;
+    margin-top: 28px;
+}
+
+.doc_button.easy_book_btn_c {
+    margin-top: 52px;
 }
 
 .carAndModal_car_selection {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 24px;
+    margin-top: 42px;
     border: 1px solid var(--primary_color);
     padding: 8px 16px;
     border-radius: 12px;
@@ -949,4 +954,22 @@ button.btn-default {
 
 span.company, span.modalname {
     margin-right: 4px;
+}
+
+.homepageSectionRight {
+    height: 360px;
+    /* margin-left: 152px; */
+    position: relative;
+    width: 460px;
+    /* background-color:#8173c999; */
+    background-image: linear-gradient(to right, #8173c999 , #8173c947);
+    border-radius: 24px;
+}
+
+.homepageSectionRight img {
+    position: absolute;
+    top: -128px;
+    height: 800px;
+    width: 788px;
+    right: 0;
 }

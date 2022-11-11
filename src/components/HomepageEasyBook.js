@@ -68,7 +68,7 @@ const HomepageEasyBook = props => {
             <div className='carAndModal_phone'>
                 <input inputMode='numeric' value={number} onChange={handlePhone} placeholder="Enter Mobile Number" />
             </div>
-            <Button type="easy_book_home_bt pointer" handleMe={handleServicePage} label="Check Price" />
+            <Button className="easy_book_btn_c" type="easy_book_home_bt pointer" handleMe={handleServicePage} label="Check Price" />
             {redirect && <Navigate to="/services" />}
         </div>
     )
