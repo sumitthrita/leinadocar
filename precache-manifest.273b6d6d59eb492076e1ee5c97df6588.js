@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33686420e1dbd069058a6136c96aff03",
+    "revision": "c0abce03b8f859c52d9af910b7607050",
     "url": "/leinadocar/index.html"
   },
   {
-    "revision": "1e53e7c4d99ed4b8bb8f",
+    "revision": "c486b519a253c9fac4be",
     "url": "/leinadocar/static/css/2.17696574.chunk.css"
   },
   {
-    "revision": "2a06419bf617477d78bc",
-    "url": "/leinadocar/static/css/main.51a41247.chunk.css"
+    "revision": "7d01a1ed2ad08139f20d",
+    "url": "/leinadocar/static/css/main.bbb37bd0.chunk.css"
   },
   {
-    "revision": "1e53e7c4d99ed4b8bb8f",
-    "url": "/leinadocar/static/js/2.eaecdc21.chunk.js"
+    "revision": "c486b519a253c9fac4be",
+    "url": "/leinadocar/static/js/2.07243b8c.chunk.js"
   },
   {
     "revision": "b6c269b6374f988b4fe55daf3bdb7082",
-    "url": "/leinadocar/static/js/2.eaecdc21.chunk.js.LICENSE.txt"
+    "url": "/leinadocar/static/js/2.07243b8c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5e2d0223a39e3d8fd66d",
-    "url": "/leinadocar/static/js/3.8b04b4dc.chunk.js"
+    "revision": "6ddf48533103b6fd51a0",
+    "url": "/leinadocar/static/js/3.17343b26.chunk.js"
   },
   {
-    "revision": "2a06419bf617477d78bc",
-    "url": "/leinadocar/static/js/main.2c677e07.chunk.js"
+    "revision": "7d01a1ed2ad08139f20d",
+    "url": "/leinadocar/static/js/main.09b60568.chunk.js"
   },
   {
-    "revision": "147e166654a98f3b674e",
-    "url": "/leinadocar/static/js/runtime-main.f89a90db.js"
+    "revision": "305f0314a936e9cbfbca",
+    "url": "/leinadocar/static/js/runtime-main.520070f2.js"
   },
   {
     "revision": "f63b921d8053c889bebe99a4102d6017",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "80e2e6f1582ea7fb883d6b75d0f19a43",
     "url": "/leinadocar/static/media/frontBrakeDisk.80e2e6f1.png"
+  },
+  {
+    "revision": "f994b85129869f5282669fdc45af614b",
+    "url": "/leinadocar/static/media/homecar.f994b851.png"
   },
   {
     "revision": "9bf7bf1ffe2798bf269066be4ad0ffc6",
