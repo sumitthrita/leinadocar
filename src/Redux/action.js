@@ -4,8 +4,37 @@ import {
     SET_SELECTED_VEHICLE,
     SET_ADDRESS,
     SET_PHONE,
-    SET_SERVICES_TO_SELECT
+    SET_SERVICES_TO_SELECT,
+    OPEN_MODAL,
+    CLOSE_MODAL,
+    SHOW_GENERAL_MODAL_ACTION
     } from "./actionTypes";
+
+export const openModal = () => {
+    return dispatch => {
+        dispatch({
+            type : OPEN_MODAL
+        })
+    }
+}
+
+export const closeModal = () => {
+    return dispatch => {
+        dispatch({
+            type : CLOSE_MODAL
+        })
+    }
+}
+
+export const showGeneralModalAction = (data) => {
+    //data is an object
+    return dispatch => {
+        dispatch({
+            type : SHOW_GENERAL_MODAL_ACTION,
+            payload : data
+        })
+    }
+}
 
 export const addToCard = (data) => {
    return dispatch => {

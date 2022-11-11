@@ -8,10 +8,10 @@ const CarAndModalSelectionData = props => {
             {props.dataToShow.length > 0 ? 
                 props.dataToShow.map((e) => 
                     <div key={e.id} className='carAndModal_eachItems'>
-                        <div className={'carAndModal_eachItems_img' + " page_" + props.page}>
+                        <div className={'carAndModal_eachItems_img' + " page_" + props.page + " " + (props.page === "engineType" && props.vehicleInfo.engineType === e.title ? "item_selected" : "")}>
                             <img data-title={e.title} src={e.img} alt="carcompanylogo" />
                         </div>
-                        <div id="item_title" data-title={e.title} className='carAndModal_eachItems_title'>{e.title} </div>
+                        <div id="item_title" data-title={e.title} className={'carAndModal_eachItems_title ' + (props.page === "engineType" && props.vehicleInfo.engineType === e.title ? "item_selected" : "")}>{e.title} </div>
                     </div>
                 )
             :
