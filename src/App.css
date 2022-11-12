@@ -1008,7 +1008,7 @@ span.company, span.modalname {
 
 .cC_contents {
     display: flex;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     transition: transform 0.3s;
     margin: 12px 10px;
 }
@@ -1089,4 +1089,70 @@ span.company, span.modalname {
     line-height: 17px;
     font-weight: 400;
     margin-top: 12px;
+}
+
+.homepagesectionfour {
+    background-color: #FCFBFF;
+    padding: 40px 90px;
+}
+
+.cR_eachContent {
+    width: 350px;
+    margin-right: 94px;
+    padding: 46px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.cR_eC_top {
+    width: 258px;
+}
+
+.cR_eC_bottom {
+    width: 258px;
+}
+
+.cR_eC_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cR_eCTop_left {
+    display: flex;
+}
+
+.cRTopLeft_nameStar {
+    margin-left: 12px;
+    align-self: center;
+}
+
+.crtl_name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 12px;
+}
+
+.crtl_star svg {
+    height: 12px;
+    color: #FFCE31;
+}
+
+.cR_eCTop_right {
+    font-size: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cR_eC_bottom {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.homepagesectionfour .customCarousel {
+    margin-top: 58px;
 }

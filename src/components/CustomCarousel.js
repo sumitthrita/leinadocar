@@ -46,7 +46,7 @@ const CustomCarousel = props => {
             }
             <div className='cC_contentbox'>
                 <div className='cC_contents' style={{transform : `translateX(${translateWidth}px)`}}>
-                    {datatoShow()}
+                    {props.children}
                 </div>
             </div>
             {translateWidth !== props.transformWidth*props.count*(-1) && 

@@ -45,7 +45,16 @@ const HomepageSectionTwo = props => {
     return (
         <div className='homepagesectionTwo'>
             <HomepagesectionTitle title="Car services we provide" />
-            <CustomCarousel data={data} count={count} transformWidth={336} />
+            <CustomCarousel data={data} count={count} transformWidth={336} >
+                {data.map(e => 
+                    <div className='cC_eachContent' key={e.id}>
+                        <div className='cc_eachImage' >
+                            <img src={e.img} alt="image" />
+                        </div>
+                        <div className='cC_eachTitle'>{e.title} </div>
+                    </div>
+                )}
+            </CustomCarousel>
         </div>
     )
 }
