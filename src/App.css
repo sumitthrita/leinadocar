@@ -702,7 +702,7 @@ button.btn-default {
 }
 
 .homepageSectionOne {
-    padding: 24px 0 60px 140px;
+    padding: 24px 0 60px 90px;
     display: flex;
     height: 502px;
     background-color: #ECE4E3;
@@ -710,23 +710,33 @@ button.btn-default {
 }
 
 .easy_book_home {
-    width: 360px;
+    width: 420px;
     height: 398px;
     background: #F7F2FF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
-    padding: 56px 36px 36px 36px;
+    padding: 56px 40px 40px 40px;
 }
 
 .easy_book_title {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 28px;
     font-weight: 700;
     color: #000;
+    letter-spacing: 0.4px;
 }
 
 .carAndModal_car_selection {
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42px;
+    border: 1px solid var(--primary_color);
+    padding: 7px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .btn-default.easy_book_home_bt {
@@ -739,17 +749,6 @@ button.btn-default {
 
 .doc_button.easy_book_btn_c {
     margin-top: 52px;
-}
-
-.carAndModal_car_selection {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 42px;
-    border: 1px solid var(--primary_color);
-    padding: 8px 16px;
-    border-radius: 12px;
-    cursor: pointer;
 }
 
 .carAndModal {
@@ -972,4 +971,88 @@ span.company, span.modalname {
     height: 800px;
     width: 788px;
     right: 0;
+}
+
+.homepagesectionTwo {
+    background-color: #fff;
+    padding: 40px 90px;
+}
+
+.homepagesectiontitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.hpst_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.hpst_hor_bar {
+    margin-top: 24px;
+    width: 126px;
+    height: 6px;
+    border-radius: 0 4px 4px 0;
+    background-color: #000;
+}
+
+.homepagesectionTwo .customCarousel {
+    margin-top: 58px;
+}
+
+.customCarousel {
+    display: flex;
+    position: relative;
+}
+
+.cC_contents {
+    display: flex;
+    white-space: nowrap;
+    transition: transform 0.3s;
+    margin: 12px 10px;
+}
+
+.cC_contentbox {
+    overflow: hidden;
+}
+
+.cC_eachContent {
+    width: 208px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px 30px;
+    background-color: #8173C936;
+    margin-right: 148px;
+    justify-content: flex-end;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+
+.cc_eachImage {
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cC_eachTitle {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.cC_arrow {
+    position: absolute;
+    z-index: 99;
+}
+
+.cC_arrow.arrowLeft {
+    left: -92px;
+}
+
+.cC_arrow.arrowRight {
+    right: -92px;
 }

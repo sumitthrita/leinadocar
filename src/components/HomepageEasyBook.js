@@ -51,7 +51,7 @@ const HomepageEasyBook = props => {
 
     return (
         <div className='easy_book_home'>
-            <div className='easy_book_title'>A simler way to book a car service</div>
+            <div className='easy_book_title'>A simpler way to book a car service</div>
             <div className='carAndModal_car_selection' onClick={handleModal} >
                 <div>{_selectedVehicle.engineType !== "" ?
                         <div>
