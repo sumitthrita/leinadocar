@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/leinadocar/precache-manifest.b4904be2c53ff41230f2858418fd3dc7.js"
+  "/leinadocar/precache-manifest.0032218b416a13c67e0dbca17ad7c547.js"
 );
 
 self.addEventListener('message', (event) => {
