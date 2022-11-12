@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from '.././Images/logo.png';
 import {Navbar,Nav} from 'react-bootstrap';
 import  {NavLink} from 'react-router-dom';
 import cartImage from '../Images/cart.png';
 
 
+const Header = props => {
 
-const Header = props =>{
-
+useEffect(() => {
+  const version = require('../../package.json');
+  localStorage.setItem("version", version.version)
+},[])
 
 return (
   <Navbar sticky="top" className="headnav" expand="lg" >

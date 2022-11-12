@@ -1,5 +1,6 @@
 import React, { memo } from "react"
 import HomepageSectionOne from "./HomepageSectionOne";
+import HomepageSectionThree from "./HomepageSectionThree";
 import HomepageSectionTwo from "./HomepageSectionTwo";
 
 const HomePage = props => {
@@ -7,6 +8,7 @@ const HomePage = props => {
     <div className="homepage">
       <HomepageSectionOne />
       <HomepageSectionTwo />
+      <HomepageSectionThree />
     </div>
   )
 }

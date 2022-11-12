@@ -1056,3 +1056,37 @@ span.company, span.modalname {
 .cC_arrow.arrowRight {
     right: -92px;
 }
+
+.homepagesectionThree {
+    padding: 42px 90px;
+    background-color: #E0E4E7;
+}
+
+.hpsth_content {
+    display: flex;
+    padding: 32px 0;
+    justify-content: space-between;
+}
+
+.hpsth_ceach {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hpsth_ctitle {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.hpsth_csubtitle {
+    width: 222px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    margin-top: 12px;
+}
