@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/leinadocar/static/css/main.fd852e56.chunk.css",
-    "main.js": "/leinadocar/static/js/main.90e561e6.chunk.js",
-    "main.js.map": "/leinadocar/static/js/main.90e561e6.chunk.js.map",
-    "runtime-main.js": "/leinadocar/static/js/runtime-main.c0077425.js",
-    "runtime-main.js.map": "/leinadocar/static/js/runtime-main.c0077425.js.map",
+    "main.css": "/leinadocar/static/css/main.765c4048.chunk.css",
+    "main.js": "/leinadocar/static/js/main.b2585d57.chunk.js",
+    "main.js.map": "/leinadocar/static/js/main.b2585d57.chunk.js.map",
+    "runtime-main.js": "/leinadocar/static/js/runtime-main.ca0ecdf1.js",
+    "runtime-main.js.map": "/leinadocar/static/js/runtime-main.ca0ecdf1.js.map",
     "static/css/2.17696574.chunk.css": "/leinadocar/static/css/2.17696574.chunk.css",
-    "static/js/2.9fe7c4bf.chunk.js": "/leinadocar/static/js/2.9fe7c4bf.chunk.js",
-    "static/js/2.9fe7c4bf.chunk.js.map": "/leinadocar/static/js/2.9fe7c4bf.chunk.js.map",
-    "static/js/3.3f91322b.chunk.js": "/leinadocar/static/js/3.3f91322b.chunk.js",
-    "static/js/3.3f91322b.chunk.js.map": "/leinadocar/static/js/3.3f91322b.chunk.js.map",
+    "static/js/2.6b14269c.chunk.js": "/leinadocar/static/js/2.6b14269c.chunk.js",
+    "static/js/2.6b14269c.chunk.js.map": "/leinadocar/static/js/2.6b14269c.chunk.js.map",
+    "static/js/3.c51e4333.chunk.js": "/leinadocar/static/js/3.c51e4333.chunk.js",
+    "static/js/3.c51e4333.chunk.js.map": "/leinadocar/static/js/3.c51e4333.chunk.js.map",
     "index.html": "/leinadocar/index.html",
-    "precache-manifest.b9c228d5a89eac628f03a75b8e8a5cc9.js": "/leinadocar/precache-manifest.b9c228d5a89eac628f03a75b8e8a5cc9.js",
+    "precache-manifest.0a34d5ea7b8719b33ed9d87e0f722828.js": "/leinadocar/precache-manifest.0a34d5ea7b8719b33ed9d87e0f722828.js",
     "service-worker.js": "/leinadocar/service-worker.js",
     "static/css/2.17696574.chunk.css.map": "/leinadocar/static/css/2.17696574.chunk.css.map",
-    "static/css/main.fd852e56.chunk.css.map": "/leinadocar/static/css/main.fd852e56.chunk.css.map",
-    "static/js/2.9fe7c4bf.chunk.js.LICENSE.txt": "/leinadocar/static/js/2.9fe7c4bf.chunk.js.LICENSE.txt",
+    "static/css/main.765c4048.chunk.css.map": "/leinadocar/static/css/main.765c4048.chunk.css.map",
+    "static/js/2.6b14269c.chunk.js.LICENSE.txt": "/leinadocar/static/js/2.6b14269c.chunk.js.LICENSE.txt",
     "static/media/drumBrakeTuning.png": "/leinadocar/static/media/drumBrakeTuning.f63b921d.png",
     "static/media/frontBrakeDisk.png": "/leinadocar/static/media/frontBrakeDisk.80e2e6f1.png",
     "static/media/homecar.png": "/leinadocar/static/media/homecar.f994b851.png",
@@ -26,10 +26,10 @@
     "static/media/sPStandard.png": "/leinadocar/static/media/sPStandard.4b13d93a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c0077425.js",
+    "static/js/runtime-main.ca0ecdf1.js",
     "static/css/2.17696574.chunk.css",
-    "static/js/2.9fe7c4bf.chunk.js",
-    "static/css/main.fd852e56.chunk.css",
-    "static/js/main.90e561e6.chunk.js"
+    "static/js/2.6b14269c.chunk.js",
+    "static/css/main.765c4048.chunk.css",
+    "static/js/main.b2585d57.chunk.js"
   ]
 }
