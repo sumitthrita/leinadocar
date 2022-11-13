@@ -1,6 +1,6 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
+import React, { memo } from 'react'
 import CustomCarousel from './CustomCarousel';
 import HomepagesectionTitle from './HomepagesectionTitle';
 import cone from '../Images/customerone.png'
@@ -100,4 +100,4 @@ const HomepageSectionFour = props => {
     )
 }
 
-export default HomepageSectionFour;
+export default memo(HomepageSectionFour);

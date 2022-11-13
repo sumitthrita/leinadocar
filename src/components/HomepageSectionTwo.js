@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import CustomCarousel from './CustomCarousel';
 import HomepagesectionTitle from './HomepagesectionTitle';
 import diagnostics from '../Images/diagnostics.png'
@@ -59,4 +59,4 @@ const HomepageSectionTwo = props => {
     )
 }
 
-export default HomepageSectionTwo;
+export default memo(HomepageSectionTwo);

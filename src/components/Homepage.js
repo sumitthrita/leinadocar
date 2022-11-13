@@ -1,4 +1,5 @@
 import React, { memo } from "react"
+import HomepageFooter from "./HomepageFooter";
 import HomepageSectionFour from "./HomepageSectionFour";
 import HomepageSectionOne from "./HomepageSectionOne";
 import HomepageSectionThree from "./HomepageSectionThree";
@@ -11,6 +12,7 @@ const HomePage = props => {
       <HomepageSectionTwo />
       <HomepageSectionThree />
       <HomepageSectionFour />
+      <HomepageFooter />
     </div>
   )
 }

@@ -15,15 +15,6 @@ const CustomCarousel = props => {
         }
     },[])
 
-    const datatoShow = () => props.data.map((e, i) => 
-                <div className='cC_eachContent' key={e.id}>
-                    <div className='cc_eachImage' >
-                        <img src={e.img} alt="image" />
-                    </div>
-                    <div className='cC_eachTitle'>{e.title} </div>
-                </div>
-            )
-
     const handleArrowClick = (type) => {
         if(type === "left"){
             if(translateWidth !== 0){
