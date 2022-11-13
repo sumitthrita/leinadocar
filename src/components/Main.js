@@ -12,8 +12,9 @@ const Main = props => {
                 <Route path="/leinadocar" exact strict element={<HomePage />} />
                 <Route path="/checkout" exact strict element={<Checkout />} />
                 <Route path="/services" exact strict element={<Services />} />
-            {/* <Route path="/contact" exact strict component={Contact}/> */}
-            {/* <Route path="/login" exact strict component={Login}/> */}
+                <Route path="/contact" exact strict element={<Services />}/>
+                <Route path="/aboutUs" exact strint element={<Services />} />
+                <Route path="/login" exact strict element={<Services />}/>
             </Routes>
         </div>
     )

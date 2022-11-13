@@ -11,6 +11,7 @@ import Main from "./components/Main";
 import { useDispatch, useSelector } from "react-redux";
 import { showGeneralModalAction } from "./Redux/action";
 import Modal from './components/Modal'
+import NewHeader from "./components/NewHeader";
 
 // import Service from './components/Service';
 // import Contact from './components/Contact';
@@ -41,7 +42,8 @@ const App=()=> {
   return ( 
     <Router>
         <div>
-          <Header />
+          {/* <Header /> */}
+          <NewHeader />
           <Main />
           {showGeneralModal.showModal &&
                 <div className="modal-wrapper">
