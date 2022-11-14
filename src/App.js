@@ -1,21 +1,13 @@
 import React from "react";
 import './App.css';
-
-
-import Homepage from './components/Homepage';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Checkout from "./components/Checkout";
-import Header from "./components/Header";
-import Services from "./components/Services";
 import Main from "./components/Main";
 import { useDispatch, useSelector } from "react-redux";
 import { showGeneralModalAction } from "./Redux/action";
 import Modal from './components/Modal'
 import NewHeader from "./components/NewHeader";
+import HomepageFooter from './components/HomepageFooter';
 
-// import Service from './components/Service';
-// import Contact from './components/Contact';
-// import Login from './components/Login';
 
 
  
@@ -45,6 +37,7 @@ const App=()=> {
           {/* <Header /> */}
           <NewHeader />
           <Main />
+          <HomepageFooter />
           {showGeneralModal.showModal &&
                 <div className="modal-wrapper">
                     <Modal
