@@ -81,7 +81,35 @@ export const setServicesToSelect = serviceType => {
         case "Denting & Paiting":
             services = DentingAndPainting
             break;
+        case "Batteries":
+            services = PeriodicServices
+            break;
+        case "Car Spa & Cleaning":
+            services = DentingAndPainting
+            break;
+        case "AC Service & Repair":
+            services = PeriodicServices
+            break;
+        case "Tyres & Wheel care":
+            services = DentingAndPainting
+            break;
+        case "Insurance & Claims":
+            services = PeriodicServices
+            break;
+        case "Custom Services":
+            services = DentingAndPainting
+            break;
+        case "Detailing Services":
+            services = PeriodicServices
+            break;
+        case "Windshields & Lights":
+            services = DentingAndPainting
+            break;
+        case "Clutch & Fitments":
+            services = PeriodicServices
+            break;
         default:
+            // services = PeriodicServices
             break;
     }
     return dispatch => {
