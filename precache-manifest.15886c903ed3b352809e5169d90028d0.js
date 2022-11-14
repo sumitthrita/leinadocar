@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75de2edf57c2a8c4b9ccaca4feb9ca98",
+    "revision": "80e76b6a7da80477f08dae723640293f",
     "url": "/leinadocar/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/leinadocar/static/css/2.17696574.chunk.css"
   },
   {
-    "revision": "e209b667474ac8dc1538",
-    "url": "/leinadocar/static/css/main.12f390f8.chunk.css"
+    "revision": "e110b79e46e589aaec56",
+    "url": "/leinadocar/static/css/main.f8d36a1e.chunk.css"
   },
   {
     "revision": "1d730de9d8d36eca2822",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/leinadocar/static/js/3.dfd0a794.chunk.js"
   },
   {
-    "revision": "e209b667474ac8dc1538",
-    "url": "/leinadocar/static/js/main.ecfede61.chunk.js"
+    "revision": "e110b79e46e589aaec56",
+    "url": "/leinadocar/static/js/main.7c8dcb24.chunk.js"
   },
   {
     "revision": "6c89f11d49ac0c6fcf18",
