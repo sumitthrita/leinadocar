@@ -31,14 +31,14 @@ const HomepageFooter = props => {
                         <div className='hpf_ln_nameinfo'>
                             <div className='hpf_ln_name'>Doc.Car</div>
                             <div className='hpf_ln_subname'>Heal & Fix it away.</div>
-                        </div>
-                    </div>
-                    <div className='hpf_social_icons'>
-                        {icons.map(e => 
-                            <div className='hpf_si_icon'>
-                                <img src={e} alt="socialmedia_icon" />
+                            <div className='hpf_social_icons'>
+                                {icons.map(e => 
+                                    <div className='hpf_si_icon'>
+                                        <img src={e} alt="socialmedia_icon" />
+                                    </div>
+                                )}
                             </div>
-                        )}
+                        </div>
                     </div>
                 </div>
                 <div className='hpf_two'>
