@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/leinadocar/static/css/main.240abb92.chunk.css",
-    "main.js": "/leinadocar/static/js/main.bd2f2ce0.chunk.js",
-    "main.js.map": "/leinadocar/static/js/main.bd2f2ce0.chunk.js.map",
+    "main.js": "/leinadocar/static/js/main.6382768d.chunk.js",
+    "main.js.map": "/leinadocar/static/js/main.6382768d.chunk.js.map",
     "runtime-main.js": "/leinadocar/static/js/runtime-main.62115af9.js",
     "runtime-main.js.map": "/leinadocar/static/js/runtime-main.62115af9.js.map",
     "static/css/2.17696574.chunk.css": "/leinadocar/static/css/2.17696574.chunk.css",
@@ -11,7 +11,7 @@
     "static/js/3.dfd0a794.chunk.js": "/leinadocar/static/js/3.dfd0a794.chunk.js",
     "static/js/3.dfd0a794.chunk.js.map": "/leinadocar/static/js/3.dfd0a794.chunk.js.map",
     "index.html": "/leinadocar/index.html",
-    "precache-manifest.7161b2537341b754bf5157b847227724.js": "/leinadocar/precache-manifest.7161b2537341b754bf5157b847227724.js",
+    "precache-manifest.9189ba2820fd2fdc20730df56400ed93.js": "/leinadocar/precache-manifest.9189ba2820fd2fdc20730df56400ed93.js",
     "service-worker.js": "/leinadocar/service-worker.js",
     "static/css/2.17696574.chunk.css.map": "/leinadocar/static/css/2.17696574.chunk.css.map",
     "static/css/main.240abb92.chunk.css.map": "/leinadocar/static/css/main.240abb92.chunk.css.map",
@@ -30,6 +30,6 @@
     "static/css/2.17696574.chunk.css",
     "static/js/2.8a60e578.chunk.js",
     "static/css/main.240abb92.chunk.css",
-    "static/js/main.bd2f2ce0.chunk.js"
+    "static/js/main.6382768d.chunk.js"
   ]
 }
