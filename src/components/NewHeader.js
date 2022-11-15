@@ -31,7 +31,7 @@ const NewHeader = props => {
                         </NavLink>
                     </div>
                     <div className='docNav_option pointer'>
-                        <NavLink to="/services" activeClassName="active" >
+                        <NavLink to="/contact" activeClassName="active" >
                             <div className='docNav_title' >Contact</div>
                         </NavLink>
                     </div>

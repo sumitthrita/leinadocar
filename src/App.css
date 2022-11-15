@@ -433,10 +433,11 @@ button.btn-default {
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    top: 100px;
+    top: 88px;
     background-color: #ECE4E3;
     z-index: 99;
     padding-bottom: 24px;
+    padding: 0 41px;
 }
 
 .servicesHeader_services {
@@ -633,17 +634,20 @@ button.btn-default {
 }
 
 .servicesContainer_left.lessWidth {
-    width: calc(84% - 62px);
+    width: calc(76% - 62px);
 }
 
 .selectedServicesCart_container {
     width: 0;
     opacity: 0;
     transition: all 0.25s linear;
+    background-color: #F7F2FF;
+    padding: 42px 30px;
+    border-radius: 12px;
 }
 
 .selectedServicesCart_container.moreWidth {
-    width: 16%;
+    width: 24%;
     margin-left: 36px;
     position: fixed;
     right: 90px;
@@ -664,12 +668,25 @@ button.btn-default {
 
 .selectedServices_card {
     margin-top: 28px;
+    background-color: #8173C9;
+    border-radius: 12px;
+    padding: 10px 12px;
+    overflow-y: auto;
+    max-height: 282px;
+}
+
+.selectedServices_card::-webkit-scrollbar {
+    display: none;
 }
 
 .selectedService_card {
     margin-bottom: 18px;
     display: flex;
     justify-content: space-between;
+}
+
+.selectedService_card:nth-last-child(1) {
+    margin-bottom: 0;
 }
 
 .selectedService_title {
@@ -680,10 +697,14 @@ button.btn-default {
     color: #000;
 }
 
-.selectedServices_totalAmount span {
+.selectedServices_totalAmount {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
     color: #000;
 }
@@ -1345,6 +1366,49 @@ a {
     background-color: #ECE4E3;
 }
 
-.services_header {
-    padding: 0 41px;
+.selectedServicesCart_container .doc_button {
+    margin-top: 0;
+}
+
+.horizontal_seperator {
+    width: 100%;
+    border: 2px solid #BBBBBB;
+    margin-top: 28px;
+}
+
+.selectedServicesCart_container a.sS_checkout .doc_button.gotoService {
+    margin-top: 24px;
+}
+
+.selectedServicesCart_container a.sS_checkout .doc_button.gotoService button {
+    width: 100%;
+}
+
+.selectedServicesCart_carDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sSCCar_name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sSCCar_type {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #BBBBBB;
+}
+
+.sSCCar_right {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8173C9;
+    color: #fff;
 }
