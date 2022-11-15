@@ -67,7 +67,7 @@ import {
         case SET_PHONE:
             return {
                 ...state,
-                _phone : action.payload
+                _contactNumber : action.payload
             }
             break;
         case SET_SERVICES_TO_SELECT:

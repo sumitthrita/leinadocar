@@ -2,6 +2,7 @@ import { faPencil, faMapMarkerAlt, faCheckCircle, faCheck } from "@fortawesome/f
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { memo, useEffect, useState } from "react"
 import { useSelector } from "react-redux"
+import Button from "./Button"
 import CheckoutCart from "./CheckoutCart"
 import CheckoutContact from "./CheckoutContact"
 import CheckoutLocation from "./CheckoutLocation"
@@ -11,9 +12,11 @@ const Checkout = props => {
 
     const [services, setServices] = useState([])
 
-    const {selectedVehicle, selectedServices, address} = useSelector(store => ({
+    const {selectedVehicle, selectedServices, _address, _contactNumber} = useSelector(store => ({
         selectedVehicle : store.checkoutReducer._selectedVehicle,
-        selectedServices : store.checkoutReducer._services
+        selectedServices : store.checkoutReducer._services,
+        _address : store.checkoutReducer._address,
+        _contactNumber : store.checkoutReducer._contactNumber
     }))
 
     useEffect(() => {
@@ -22,6 +25,10 @@ const Checkout = props => {
             setServices(currentServices)
         }
     },[selectedServices])
+
+    const handlePlaceOrder = () => {
+
+    }
 
     return(
         <div className="checkout">
@@ -32,9 +39,9 @@ const Checkout = props => {
                     </div>
                     <div className="sB__each-bar">
                         <div className="sB__bar"></div>
-                        <div className={`sB_circle ${selectedVehicle !== "" ? "complete" : ""}`}>
-                            <div className={`sB_innerCircle ${selectedVehicle !== "" ? "complete" : ""}`} >
-                                {selectedVehicle !== "" && 
+                        <div className={`sB_circle ${selectedVehicle.engineType !== "" ? "complete" : ""}`}>
+                            <div className={`sB_innerCircle ${selectedVehicle.engineType !== "" ? "complete" : ""}`} >
+                                {selectedVehicle.engineType !== "" && 
                                     <FontAwesomeIcon icon={faCheck} />
                                 }
                             </div>
@@ -76,6 +83,9 @@ const Checkout = props => {
                 </div>
                 <div className="checkoutMain__right">
                     <CheckoutCart />
+                    { selectedVehicle.engineType !== "" && services.length > 0 && _address !== "" && _contactNumber !== "" &&
+                        <Button label="Place Order" className="placeOrderbtn" handleMe={handlePlaceOrder} />
+                    }
                 </div>
             </div>
         </div>

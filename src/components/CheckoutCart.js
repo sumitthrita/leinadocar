@@ -3,45 +3,60 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { memo, useCallback, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { addToCard } from '../Redux/action';
+import { addToCard, showGeneralModalAction } from '../Redux/action';
 import Button from './Button';
+import CarSelectionModal from './CarSelectionModal';
 import { findTotalAmount } from './helpingFunctions';
 
 const CheckoutCart = props => {
-    console.log("working");
 
-    const [changeVehicle, setChangeVehicle] = useState(false)
-
-    const {selectedVehicle, selectedServices} = useSelector((store) => ({
-        selectedVehicle : store.checkoutReducer._selectedVehicle,
-        selectedServices : JSON.parse(store.checkoutReducer._services)
+    const {_selectedVehicle, _selectedServices} = useSelector((store) => ({
+        _selectedVehicle : store.checkoutReducer._selectedVehicle,
+        _selectedServices : JSON.parse(store.checkoutReducer._services)
     }))
 
     const dispatch = useDispatch()
 
     const handleDelete = (index) => {
-        let allServices = [...selectedServices]
+        let allServices = [..._selectedServices]
         allServices.splice(index, 1)
         dispatch(addToCard(allServices))
     }
 
+    const closeModal = () => {
+        const toSend = {
+            showModal : false
+        }
+        dispatch(showGeneralModalAction(toSend))
+    }
+
+    const handleCarSelectionModal = e => {
+        const toSend = {
+            component: <CarSelectionModal closeModal={closeModal} />, 
+            title: "",
+            showModal: true,
+            handleClose: closeModal
+        }
+        dispatch(showGeneralModalAction(toSend))
+    }
+
     return (
         <div className='checkout_cart'>
-            <div className='checkoutCart__vehicle'>
-                {changeVehicle ?
-                    <div>input box</div>
-                :
+            {_selectedVehicle.engineType !== "" ?
+                <div className='checkoutCart__vehicle'>
                     <div className='checkoutCart_vehicleInfo'>
-                        <div className='vehicleName'>{selectedVehicle.name} <span className='vehicleType' >{selectedVehicle.type} </span> </div>
-                        <div className='changeIcon'>
+                        <div className='vehicleName'> {_selectedVehicle.company} {_selectedVehicle.carModal}<span className='vehicleType' >{_selectedVehicle.engineType} </span> </div>
+                        <div className='changeIcon' onClick={handleCarSelectionModal} >
                             <FontAwesomeIcon icon={faPencil} />
                         </div>
                     </div>
-                }
-            </div>
+                </div>
+            :
+                <Button label="Select Car" handleMe={handleCarSelectionModal} />
+            }
             <div className='checkout__services'>
-                {selectedServices?.length > 0 ?
-                    (selectedServices?.map((service, index) => {
+                {_selectedServices?.length > 0 ?
+                    (_selectedServices?.map((service, index) => {
                         return (
                             <div className='eachService__cart'>
                                 <div className='eSCart_header'>
