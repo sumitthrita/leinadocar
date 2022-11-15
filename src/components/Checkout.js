@@ -1,6 +1,6 @@
 import { faPencil, faMapMarkerAlt, faCheckCircle, faCheck } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import React, { memo, useEffect, useState } from "react"
+import React, { memo, useCallback, useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import Button from "./Button"
 import CheckoutCart from "./CheckoutCart"
@@ -11,6 +11,7 @@ import CheckoutPayment from "./CheckoutPayment"
 const Checkout = props => {
 
     const [services, setServices] = useState([])
+    const [paymentMethod, setPaymentMethod] = useState("")
 
     const {selectedVehicle, selectedServices, _address, _contactNumber} = useSelector(store => ({
         selectedVehicle : store.checkoutReducer._selectedVehicle,
@@ -25,6 +26,10 @@ const Checkout = props => {
             setServices(currentServices)
         }
     },[selectedServices])
+
+    const handlePaymentMethod = useCallback((value) => {
+        setPaymentMethod(value)
+    },[])
 
     const handlePlaceOrder = () => {
 
@@ -79,11 +84,11 @@ const Checkout = props => {
                 <div className="checkoutMain__left">
                     <CheckoutLocation />
                     <CheckoutContact />
-                    <CheckoutPayment />
+                    <CheckoutPayment paymentMethod={paymentMethod} handlePaymentMethod={(value) => handlePaymentMethod(value)} />
                 </div>
                 <div className="checkoutMain__right">
                     <CheckoutCart />
-                    { selectedVehicle.engineType !== "" && services.length > 0 && _address !== "" && _contactNumber !== "" &&
+                    { selectedVehicle.engineType !== "" && services.length > 0 && _address !== "" && _contactNumber !== "" && paymentMethod !== "" &&
                         <Button label="Place Order" className="placeOrderbtn" handleMe={handlePlaceOrder} />
                     }
                 </div>
